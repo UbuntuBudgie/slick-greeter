@@ -1,51 +1,5 @@
-slick-greeter (1.0.2) sonya; urgency=medium
+slick-greeter (1.0.2-1) unstable; urgency=medium
 
-  [ gogogogi ]
-  * l10n: Update hr.po (#26)
+  * Initial release. (Closes: #)
 
-  [ gabrc52 ]
-  * Fix session validation (#28)
-
-  [ Clement Lefebvre ]
-  * Session validation: Refactor in case variable is null
-
- -- Clement Lefebvre <root@linuxmint.com>  Fri, 12 May 2017 15:15:56 +0100
-
-slick-greeter (1.0.1) sonya; urgency=medium
-
-  [ Clement Lefebvre ]
-  * Fix Slick-Greeter preventing DE from applying cursor theme/size.
-  * Add HiDPI support
-  * Don't draw the background before starting the session.
-  * Fix build and runtime warnings
-  * Fix incorrect orca arguments
-  * HiDPI: Take the screen size in consideration
-  * HiDPI: Allow to force HiDPI support ON or OFF
-
-  [ leigh123linux ]
-  * slick-greeter should depend on lightdm
-  * Add basic screenshot capability
-
-  [ Clement Lefebvre ]
-  * Show PID in debug logs for at-spi process
-  * Update README.md
-
-  [ leigh123linux ]
-  * Remove unused pkla file
-
-  [ Elias Ojala ]
-  * Change the homepage and remove Vcs-Bzr
-
-  [ AsciiWolf ]
-  * l10n: Replace Unity with Slick in translated strings
-
-  [ Elias Ojala ]
-  * Change maintainer to Linux Mint
-
- -- Clement Lefebvre <root@linuxmint.com>  Fri, 05 May 2017 13:23:25 +0100
-
-slick-greeter (1.0.0) sonya; urgency=medium
-
-  * Initial release
-
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 06 Apr 2017 19:25:15 +0100
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 15 May 2017 19:25:15 +0100

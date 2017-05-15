@@ -1,21 +1,20 @@
 Source: slick-greeter
 Section: x11
 Priority: optional
-Maintainer: Linux Mint <root@linuxmint.com>
+Maintainer: David Mohammed <fossfreedom@ubuntu.com>
 Standards-Version: 3.9.8
 Build-Depends: at-spi2-core,
                dbus-x11,
-               debhelper (>= 9),
-               dh-autoreconf,
+               debhelper (>= 10),
                gnome-common,
-               ttf-ubuntu-font-family,
                libcanberra-dev,
                libgtk-3-dev,
-               liblightdm-gobject-1-dev (>= 1.4.0),
+               liblightdm-gobject-1-dev (>= 1.4.0) | liblightdm-gobject-dev (>= 1.18.3),
                libpixman-1-dev,
                valac (>= 0.20.0),
                xvfb
-Homepage: https://github.com/linuxmint/slick-greeter
+Vcs-Browser: https://github.com/UbuntuBudgie/slick-greeter/tree/debian
+Vcs-Git: https://github.com/UbuntuBugie/slick-greeter -b debian
 
 Package: slick-greeter
 Architecture: any
@@ -23,9 +22,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          lightdm,
          python3
-Suggests: lightdm-remote-session-freerdp,
-          lightdm-remote-session-uccsconfigure,
-          remote-login-service,
 Provides: lightdm-greeter
 Description: Slick-looking LightDM greeter
  Slick-Greeter is cross-distribution and should work pretty much
