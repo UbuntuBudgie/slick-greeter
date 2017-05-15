@@ -6,7 +6,7 @@ Copyright: 2011-2013 Canonical Ltd
 License: GPL-3
 
 Files: debian/*
-Copyright: 2017 Clement Lefebvre <root@linuxmint.com>
+Copyright: 2017 David Mohammed <fossfreedom@ubuntu.com>
 License: GPL-2+
 
 Files: po/*.po
@@ -16,6 +16,10 @@ License: GPL-3
 
 Files: files/usr/share/slick-greeter/badges/*
 Copyright: 2013 zombifier
+License: CC-BY-3.0
+
+Files: data/a11y.svg
+Copyright: 1999-2000 GNOME Project
 License: CC-BY-3.0
 
 Files: files/usr/share/slick-greeter/badges/budgie-desktop.png
