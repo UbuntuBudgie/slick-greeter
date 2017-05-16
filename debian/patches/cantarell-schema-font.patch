@@ -1,0 +1,21 @@
+Description: update schema to have a GNOME based font
+ The greeter defaults to a GNOME based GTK+ theme but with a specific
+ Ubuntu only font. This patch changes the Ubuntu only font to a common
+ font found in Debian and all Debian derived distributions i.e.
+ Cantarell Regular found in fonts-cantarell
+Author: David Mohammed <fossfreedom@ubuntu.com>
+Origin: other
+Forwarded: not-needed
+Last-Update: 2017-05-15
+
+--- slick-greeter-1.0.2.orig/data/x.dm.slick-greeter.gschema.xml
++++ slick-greeter-1.0.2/data/x.dm.slick-greeter.gschema.xml
+@@ -38,7 +38,7 @@
+       <summary>Icon theme to use</summary>
+     </key>
+     <key name="font-name" type="s">
+-      <default>'Ubuntu 11'</default>
++      <default>'Cantarell Regular 11'</default>
+       <summary>Font to use</summary>
+     </key>
+     <key name="xft-antialias" type="b">

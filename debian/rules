@@ -8,3 +8,4 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 override_dh_autoreconf:
 	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
+
