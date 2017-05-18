@@ -14,7 +14,8 @@ Build-Depends: at-spi2-core,
                liblightdm-gobject-1-dev (>= 1.4.0) | liblightdm-gobject-dev (>= 1.18.3),
                libpixman-1-dev,
                valac (>= 0.20.0),
-               xvfb
+               xvfb,
+               lightdm-vala (>= 1.18.3) | gir1.2-lightdm-1 (>= 1.22)
 Vcs-Browser: https://github.com/UbuntuBudgie/slick-greeter/tree/debian
 Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter -b debian
 
