@@ -1,3 +1,20 @@
+slick-greeter (1.0.8-1) unstable; urgency=medium
+
+  * New upstream release
+    - do not start onboard and orca on session startup since these do
+      not work with this greeter
+    - improve contrast, test color and font style to improve readability
+      for those with any form of visual impairment
+    - improve clarity of session badges for HiDPI users
+    - fix GTK+3.20 and later issues with the prompt display
+    - Improve man page and README for slick-greeter to describe all the
+      slick-greeter.conf options
+  * Packaging changes:
+    - update debian/copyright for the budgie-desktop greeter icon
+      file name; changed from .png to .svg in the source
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 29 Jun 2017 21:04:47 +0100
+
 slick-greeter (1.0.3-1) unstable; urgency=medium
 
   * Initial release. (Closes: #862934)
