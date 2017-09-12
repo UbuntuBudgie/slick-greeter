@@ -4,9 +4,13 @@ slick-greeter (1.0.8-2) unstable; urgency=medium
     - patch 0001-Session-detection-Add-support-for-more-DE-WM-61.patch
       add patch to recognise more session types so that when
       switching between sessions, the correct session type is displayed
-    - Packaging Changes:
-      add manpage for slick-greeter executable to resolve lintian warning
+    - patch 0002-add-GNOME-3.26-xorg-session-and-ubuntu-xorg-equivale.patch
+      add GNOME 3.26 xorg session plus the equivalent for Ubuntu;
+      this ensures these two session types are recognised by slick-greeter
+  * Packaging Changes:
+    - add manpage for slick-greeter executable to resolve lintian warning
       slick-greeter-set-keyboard-layout
+    - debian/rules remove broken symlink (Closes: #866999)
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 11 Sep 2017 12:47:24 +0100
 

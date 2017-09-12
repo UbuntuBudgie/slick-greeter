@@ -9,3 +9,7 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 override_dh_autoreconf:
 	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
 
+override_dh_auto_install:
+	dh_auto_install
+	# remove broken symlink
+	find debian -type l -name "ubuntu-2d.png" -print0 | xargs -r0 -- rm -r
