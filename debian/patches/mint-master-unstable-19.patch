@@ -1,0 +1,68 @@
+Description: Consolidated patch set designated "Master Mint 19"
+ This patch is built from the upstream tarball called "master.mint19:
+ greeter: Avoid expensive Python calls when it isn't needed (#93)"
+ Since the upstream tarball contains a Mint distro specific debian
+ packaging folder this has been removed and a patch created using
+ the diff between v1.1.4 upstream tarball (minus the Mint distro
+ specific debian folder) and the Master Mint 19 tarball.
+ The following upstream source patches are included:
+ https://github.com/linuxmint/slick-greeter/commit/ef83fca41562884cad61059975e4e56a10f5a1a3
+ https://github.com/linuxmint/slick-greeter/commit/6128398d7e71aab343578c6c6b74162f5fa94036
+Author: David Mohammed <fossfreedom@ubuntu.com>
+Origin: other
+Forwarded: not-needed
+Last-Update: 2018-02-17
+
+--- slick-greeter-1.1.4.orig/README.md
++++ slick-greeter-1.1.4/README.md
+@@ -24,6 +24,10 @@ A configuration tool is available at htt
+ 
+ - Slick Greeter started as a fork of Unity Greeter 16.04.2, a greeter developed for Ubuntu by Canonical, which used indicators and unity-settings-daemon.
+ 
++# Notes
++
++- Debian's lightdm packaging differs from Ubuntu's. To compile under Debian, build-deps have to be changed: liblightdm-gobject-1-dev needs to be removed, and liblightdm-gobject-dev and lightdm-vala have to be added.
++
+ ----
+ 
+ Configuration file format for /etc/lightdm/slick-greeter.conf
+@@ -31,6 +35,7 @@ Configuration file format for /etc/light
+     # LightDM GTK+ Configuration
+     # Available configuration options listed below.
+     #
++    # activate-numlock=Whether to activate numlock. This features requires the installation of numlockx. (true or false)
+     # background=Background file to use, either an image path or a color (e.g. #772953)
+     # background-color=Background color (e.g. #772953), set before wallpaper is seen
+     # draw-user-backgrounds=Whether to draw user backgrounds (true or false)
+--- slick-greeter-1.1.4.orig/src/slick-greeter.vala
++++ slick-greeter-1.1.4/src/slick-greeter.vala
+@@ -518,6 +518,11 @@ public class SlickGreeter
+ 
+     private static void set_keyboard_layout ()
+     {
++        /* Avoid expensive Python execution where possible */
++        if (!FileUtils.test("/etc/default/keyboard", FileTest.EXISTS)) {
++            return;
++        }
++
+         try {
+             Process.spawn_command_line_sync("/usr/bin/slick-greeter-set-keyboard-layout", null, null, null);
+         }
+@@ -704,6 +709,17 @@ public class SlickGreeter
+             atspi_pid = 0;
+         }
+ 
++        var screen = Gdk.Screen.get_default ();
++        unowned X.Display xdisplay = (screen.get_display () as Gdk.X11.Display).get_xdisplay ();
++
++        var window = xdisplay.default_root_window();
++        var atom = xdisplay.intern_atom ("AT_SPI_BUS", true);
++
++        if (atom != X.None) {
++            xdisplay.delete_property (window, atom);
++            Gdk.flush();
++        }
++
+         debug ("Exiting");
+ 
+         return Posix.EXIT_SUCCESS;

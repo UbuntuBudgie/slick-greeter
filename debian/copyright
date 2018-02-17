@@ -1,12 +1,12 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
 Copyright: 2011-2013 Canonical Ltd
- 2017 Clement Lefebvre <root@linuxmint.com>
+ 2017-2018 Clement Lefebvre <root@linuxmint.com>
 License: GPL-3
 
 Files: debian/*
-Copyright: 2017 David Mohammed <fossfreedom@ubuntu.com>
+Copyright: 2017-2018 David Mohammed <fossfreedom@ubuntu.com>
 License: GPL-2+
 
 Files: po/*.po
@@ -387,5 +387,5 @@ License: CC-BY-3.0
  time to time. For the avoidance of doubt, this trademark restriction
  does not form part of this License.
  .
- Creative Commons may be contacted at http://creativecommons.org/.
+ Creative Commons may be contacted at https://creativecommons.org/.
 

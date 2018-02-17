@@ -1,3 +1,22 @@
+slick-greeter (1.1.4-1) unstable; urgency=medium
+
+  * New upstream release
+    - Fix broken symlink (Closes: #866999)
+    - Build correctly with vala > 0.39
+    - Latest translations
+    - Reset config keys if not in slick config file
+    - Add multimonitor support when used with docking stations
+    - Fix failure to connect to user-session components
+    - Slick config component file changes
+  * Packaging Changes:
+    - Drop existing patches except for sans-schema-font.patch
+    - Add patch mint-master-unstable-19.patch
+    - Debian/Copyright 2018 year change and http --> https
+    - Debian/{Compat/Control} debhelper v11
+    - Debian/Control Bump Standards-Version (no changes required)
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 17 Feb 2018 22:33:15 +0000
+
 slick-greeter (1.0.8-2) unstable; urgency=medium
 
   * Bug-fix release
