@@ -10,9 +10,11 @@ slick-greeter (1.1.4-1) unstable; urgency=medium
   * Packaging Changes:
     - Drop existing patches except for sans-schema-font.patch
     - Add patch mint-master-unstable-19.patch
-    - Debian/Copyright 2018 year change and http --> https
-    - Debian/{Compat/Control} debhelper v11
-    - Debian/Control Bump Standards-Version (no changes required)
+    - debian/copyright 2018 year change and http --> https
+    - debian/{compat/control} debhelper v11
+    - debian/control Bump Standards-Version (no changes required)
+    - debian/upstream/metadata fix check-all-the-things warning
+      for missing document-start
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 17 Feb 2018 22:33:15 +0000
 
