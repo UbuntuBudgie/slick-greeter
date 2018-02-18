@@ -15,6 +15,8 @@ slick-greeter (1.1.4-1) unstable; urgency=medium
     - debian/control Bump Standards-Version (no changes required)
     - debian/upstream/metadata fix check-all-the-things warning
       for missing document-start
+    - debian/rules remove override to remove broken symlink since this
+      symlink has now been removed in the source
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 17 Feb 2018 22:33:15 +0000
 
