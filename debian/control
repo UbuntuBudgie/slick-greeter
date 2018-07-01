@@ -2,7 +2,7 @@ Source: slick-greeter
 Section: x11
 Priority: optional
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
-Standards-Version: 4.1.3
+Standards-Version: 4.1.4
 Homepage: https://github.com/linuxmint/slick-greeter
 Build-Depends: at-spi2-core,
                dbus-x11,

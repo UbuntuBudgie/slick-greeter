@@ -1,3 +1,16 @@
+slick-greeter (1.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+    - Latest translations
+    - Fix HiDPI detection
+    - Add option to display to specific monitor (only-on-monitor)
+  * Packaging Changes:
+    - Drop patch mint-master-unstable-19.patch since it is now
+      included in the new release
+    - debian/control bump StandardsVersion - no changes required
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 01 Jul 2018 22:50:27 +0100
+
 slick-greeter (1.1.4-1) unstable; urgency=medium
 
   * New upstream release
