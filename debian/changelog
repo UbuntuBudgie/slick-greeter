@@ -1,3 +1,21 @@
+slick-greeter (1.2.2-2) unstable; urgency=medium
+
+  * Packaging Changes
+    - control: bump Standards-Version; changed rules to add
+      verbose compilation
+    - control: change alternate for lightdm-vala to resolve
+      FTBS (Closes: #907752)
+      The alternate ensures the same package builds both on Ubuntu
+      and Debian
+    - Add patch 0001-background.vala-Fix-build-with-vala-0.41.91.patch
+      to ensure package build with vala 0.41.91
+    - rules: Add override for dh-missing to fail if missing files;
+      this ensures we are ready for compat 12
+    - copyright: clarify that debian source tarball is missing upstream
+      debian packaging folder which has been replaced by ours.
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 01 Sep 2018 17:28:59 +0100
+
 slick-greeter (1.2.2-1) unstable; urgency=medium
 
   * New upstream release
