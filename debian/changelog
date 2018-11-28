@@ -1,3 +1,13 @@
+slick-greeter (1.2.3-1) unstable; urgency=medium
+
+  * New release
+    - Translation updates
+  * Packaging Changes
+    - drop patch 0001-background.vala-Fix-build-with-vala-0.41.91.patch
+      since this is now included in the source
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Wed, 28 Nov 2018 22:44:29 +0000
+
 slick-greeter (1.2.2-2) unstable; urgency=medium
 
   * Packaging Changes
