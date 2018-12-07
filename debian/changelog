@@ -1,3 +1,11 @@
+slick-greeter (1.2.3-2) unstable; urgency=medium
+
+  * Packaging Change
+    - control: Add python3-gi as dependency to ensure HiDPI detection works
+      correctly (Closes: #915812)
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 07 Dec 2018 19:32:49 +0000
+
 slick-greeter (1.2.3-1) unstable; urgency=medium
 
   * New release

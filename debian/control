@@ -23,7 +23,8 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          lightdm,
-         python3
+         python3,
+         python3-gi
 Provides: lightdm-greeter
 Description: Slick-looking LightDM greeter
  Slick-Greeter is cross-distribution and should work pretty much
