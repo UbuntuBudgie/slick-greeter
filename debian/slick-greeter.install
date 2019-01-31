@@ -1,1 +1,0 @@
-debian/50-slick-greeter.conf /usr/share/lightdm/lightdm.conf.d/
