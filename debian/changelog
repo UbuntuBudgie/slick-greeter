@@ -1,3 +1,16 @@
+slick-greeter (1.2.4-3) UNRELEASED; urgency=medium
+
+  * Bug-fix release
+    - Don't install slick-greeter configuration file to enable
+      user to use update-alternatives to select a
+      greeter (Closes: #920975)
+  * Packaging changes
+    - Use postinst/prerm rules to add to update-alternatives
+    - Delete .install file to prevent slick configuration file
+      overriding update-alternative
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 31 Jan 2019 15:57:57 +0000
+
 slick-greeter (1.2.4-2) unstable; urgency=medium
 
   * Bug fix release
