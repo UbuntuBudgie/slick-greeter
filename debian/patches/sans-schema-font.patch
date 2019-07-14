@@ -7,9 +7,9 @@ Origin: other
 Forwarded: not-needed
 Last-Update: 2017-05-15
 
---- slick-greeter-1.0.2.orig/data/x.dm.slick-greeter.gschema.xml
-+++ slick-greeter-1.0.2/data/x.dm.slick-greeter.gschema.xml
-@@ -38,7 +38,7 @@
+--- a/data/x.dm.slick-greeter.gschema.xml
++++ b/data/x.dm.slick-greeter.gschema.xml
+@@ -58,7 +58,7 @@
        <summary>Icon theme to use</summary>
      </key>
      <key name="font-name" type="s">

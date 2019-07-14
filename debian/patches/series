@@ -1,3 +1,2 @@
 sans-schema-font.patch
-0001-remove-mlockall-127.patch
-
+0001-Resolve-lintian-issues-due-to-exe-install-locations-.patch

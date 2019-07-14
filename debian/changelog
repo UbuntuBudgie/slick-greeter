@@ -1,15 +1,22 @@
-slick-greeter (1.2.4-3) UNRELEASED; urgency=medium
+slick-greeter (1.2.6-1) unstable; urgency=medium
 
-  * Bug-fix release
-    - Don't install slick-greeter configuration file to enable
-      user to use update-alternatives to select a
-      greeter (Closes: #920975)
-  * Packaging changes
-    - Use postinst/prerm rules to add to update-alternatives
-    - Delete .install file to prevent slick configuration file
-      overriding update-alternative
+  * New upstream release
+    - Translations
+    - resolve FTBFS with vala 0.43
+    - Fix default session for manual user entry
+  * Packaging Changes
+    - Drop 0001-remove-mlockall-127.patch since new release
+      includes this
+    - Control: Bump StandardsVersion; no changes required
+    - Control & compat changed to 12
+    - Install manpage to section 8 since slick-greeter binary is in
+      /usr/sbin
+    - patch 0001-Resolve-lintian-issues-due-to-exe-install-locations-.patch
+      resolves lintian issues with manpages
+    - remove package manpage since now included in upstream repo & the
+      above patch
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 31 Jan 2019 15:57:57 +0000
+ -- David Mohammed <fossfreedom@ubuntu.com>  Wed, 10 Jul 2019 18:49:01 +0100
 
 slick-greeter (1.2.4-2) unstable; urgency=medium
 
