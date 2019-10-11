@@ -1,3 +1,10 @@
+slick-greeter (1.2.6-2) unstable; urgency=medium
+
+  * Bug-fix release
+    Fix FTBFS against vala 0.46 (vala045-fixes.patch)
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 11 Oct 2019 17:04:05 +0100
+
 slick-greeter (1.2.6-1) unstable; urgency=medium
 
   * New upstream release
