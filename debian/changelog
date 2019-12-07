@@ -1,3 +1,19 @@
+slick-greeter (1.3.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Translations
+    - FTBS fixes
+    - Grid display is now turned off by default
+    - Sway badge added
+  * Packaging Changes
+    - drop vala04-fixes.patch since now in the new release
+    - drop 0001-Resolve-lintian-issues-due-to-exe-install-locations-.patch
+      since now in the new release
+    - control bump Standards-Version, no changes required
+    - control Add debhelper-compat (= 12) / remove compat
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 07 Dec 2019 11:36:48 +0000
+
 slick-greeter (1.2.6-2) unstable; urgency=medium
 
   * Bug-fix release
@@ -14,7 +30,7 @@ slick-greeter (1.2.6-1) unstable; urgency=medium
   * Packaging Changes
     - Drop 0001-remove-mlockall-127.patch since new release
       includes this
-    - Control: Bump StandardsVersion; no changes required
+    - Control: Bump Standards-Version; no changes required
     - Control & compat changed to 12
     - Install manpage to section 8 since slick-greeter binary is in
       /usr/sbin
@@ -87,7 +103,7 @@ slick-greeter (1.2.2-1) unstable; urgency=medium
   * Packaging Changes:
     - Drop patch mint-master-unstable-19.patch since it is now
       included in the new release
-    - debian/control bump StandardsVersion - no changes required
+    - debian/control bump Standards-Version - no changes required
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 01 Jul 2018 22:50:27 +0100
 
