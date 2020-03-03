@@ -1,3 +1,16 @@
+slick-greeter (1.3.2+dfsg.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - Translations
+  * Packaging Changes
+    - repack source and use dfsg version to denote this
+      This resolved lintian information report
+    - control: Bump Standards-Version; no changes required
+    - copyright: Update copyright years
+    - watch: dmangle dfsg version
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 03 Mar 2020 20:39:22 +0000
+
 slick-greeter (1.3.0-1) unstable; urgency=medium
 
   * New upstream release
