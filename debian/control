@@ -18,7 +18,7 @@ Build-Depends:
  valac (>= 0.20.0),
  xvfb,
 Vcs-Browser: https://github.com/UbuntuBudgie/slick-greeter/tree/debian
-Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter -b debian
+Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter.git -b debian
 
 Package: slick-greeter
 Architecture: any
