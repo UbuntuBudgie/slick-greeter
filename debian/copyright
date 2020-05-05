@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: slick-greeter
 Source: https://github.com/linuxmint/slick-greeter
 Files-Excluded: debian
+Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
 
 Files: *
 Copyright: 2011-2013 Canonical Ltd
