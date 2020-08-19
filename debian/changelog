@@ -1,3 +1,17 @@
+slick-greeter (1.4.1+dfsg.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - gsettings background mode changed to
+      stretch-background-across-monitors
+    - translations
+  * Packaging Changes
+    - control: debhelper version bump
+    - control: add lightdm-settings, desktop-base together with a
+      gsettings override to provide out-of-the-box defaults
+      (Closes: #966628)
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Wed, 19 Aug 2020 10:16:46 +0100
+
 slick-greeter (1.3.2+dfsg.1-2) unstable; urgency=medium
 
   [ Debian Janitor ]

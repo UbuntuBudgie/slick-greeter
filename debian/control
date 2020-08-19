@@ -7,8 +7,8 @@ Homepage: https://github.com/linuxmint/slick-greeter
 Build-Depends:
  at-spi2-core,
  dbus-x11,
- debhelper (>= 12),
- debhelper-compat (= 12),
+ debhelper (>= 13),
+ debhelper-compat (= 13),
  gnome-common,
  libcanberra-dev,
  libgtk-3-dev,
@@ -23,6 +23,7 @@ Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter.git -b debian
 Package: slick-greeter
 Architecture: any
 Depends: lightdm, python3, python3-gi, ${misc:Depends}, ${shlibs:Depends}
+Recommends: desktop-base, lightdm-settings
 Provides: lightdm-greeter
 Description: Slick-looking LightDM greeter
  Slick-Greeter is cross-distribution and should work pretty much
