@@ -1,18 +1,15 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: slick-greeter
 Source: https://github.com/linuxmint/slick-greeter
-Files-Excluded: debian
 Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
 
 Files: *
 Copyright: 2011-2013 Canonical Ltd
- 2017-2018 Clement Lefebvre <root@linuxmint.com>
-Comment: Upstream does not state this anywhere by in their debian/copyright
- file, which we have to remove in order to do our own packaging
+ 2017-2020 Clement Lefebvre <root@linuxmint.com>
 License: GPL-3
 
 Files: debian/*
-Copyright: 2017-2018 David Mohammed <fossfreedom@ubuntu.com>
+Copyright: 2017-2020 David Mohammed <fossfreedom@ubuntu.com>
 License: GPL-2+
 
 Files: po/*.po

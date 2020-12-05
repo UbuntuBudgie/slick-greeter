@@ -1,3 +1,15 @@
+slick-greeter (1.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Add clock-format to config
+  * Packaging Changes
+    - Update copyright to remove tarball comment statement - upstream
+      no longer ship their own debian package so no need to repack
+    - control: Bump StandardsVersion
+    - copyright: Update Copyright years
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 05 Dec 2020 14:24:41 +0000
+
 slick-greeter (1.4.1+dfsg.1-1) unstable; urgency=medium
 
   * New upstream release
