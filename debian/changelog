@@ -1,3 +1,15 @@
+slick-greeter (1.5.5-1) unstable; urgency=medium
+
+  * New upstream release
+    - updated translations
+    - Add badge for fynedesk
+  * Packaging Changes
+    - Update copyright years
+    - control: Bump StandardsVersion; no changes required
+    - metadata: Remove homepage to resolve lintian warning
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 07 Dec 2021 19:31:36 +0000
+
 slick-greeter (1.5.1-1) unstable; urgency=medium
 
   * New upstream release
