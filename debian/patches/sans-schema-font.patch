@@ -5,12 +5,14 @@ Description: update schema to have a standard Sans font
 Author: David Mohammed <fossfreedom@ubuntu.com>
 Origin: other
 Forwarded: not-needed
-Last-Update: 2017-05-15
+Last-Update: 2022-12-18
 
---- a/data/x.dm.slick-greeter.gschema.xml
-+++ b/data/x.dm.slick-greeter.gschema.xml
-@@ -58,7 +58,7 @@
-       <summary>Icon theme to use</summary>
+Index: slick-greeter-1.6.0/data/x.dm.slick-greeter.gschema.xml
+===================================================================
+--- slick-greeter-1.6.0.orig/data/x.dm.slick-greeter.gschema.xml
++++ slick-greeter-1.6.0/data/x.dm.slick-greeter.gschema.xml
+@@ -70,7 +70,7 @@
+       <summary>Size to use for cursors</summary>
      </key>
      <key name="font-name" type="s">
 -      <default>'Ubuntu 11'</default>

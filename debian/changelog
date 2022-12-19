@@ -1,11 +1,19 @@
-slick-greeter (1.5.9-2) UNRELEASED; urgency=medium
+slick-greeter (1.6.0-1) unstable; urgency=medium
 
+  [ Debian Janitor ]
   * Avoid explicitly specifying -Wl,--as-needed linker flag.
   * Remove constraints unnecessary since buster (oldstable):
     + Build-Depends: Drop versioned constraint on liblightdm-gobject-dev,
       lightdm-vala and valac.
 
- -- Debian Janitor <janitor@jelmer.uk>  Mon, 01 Aug 2022 08:54:11 -0000
+  [ David Mohammed ]
+  * New upstream release
+    Updated translations
+    Set cursor theme and size
+    refresh sans-schema-font.patch;patch was not applying due to new
+    cursor-theme schema additions
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 19 Dec 2022 13:58:25 +0000
 
 slick-greeter (1.5.9-1) unstable; urgency=medium
 
