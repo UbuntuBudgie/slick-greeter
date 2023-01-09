@@ -1,3 +1,10 @@
+slick-greeter (1.6.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - Allow wayland sessions to pass validation
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 09 Jan 2023 20:45:39 +0000
+
 slick-greeter (1.6.0-1) unstable; urgency=medium
 
   [ Debian Janitor ]
