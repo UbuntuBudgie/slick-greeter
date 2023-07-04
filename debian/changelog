@@ -1,3 +1,32 @@
+slick-greeter (1.8.1-0.1) unstable; urgency=medium
+
+  * NMU (non-maintainer upload)
+
+  * New upstream release
+    - power: Round battery power percentage
+    - keyboard: Add support for layout switching
+    - l10n: Update POT
+    - Fix unreachable catch clause
+    - orca: Fix wrong a11y text for username prompt
+    - sessions: Make the list scrollable
+    - badges: Add pademelon
+    - badges: Add lxqt
+    - keyboard: Update label when keymap changes
+    - sessions: Add a tooltip on the session badge
+    - sessions: Close dialog on Escape
+    - keyboard navigation: Don't prevent left/right movement in Gtk.Entry
+    - a11y: Make the onboard layout configurable
+    - entry: Support the ability to reveal the password
+    - slick-greeter-check-hidpi: Fix deprecations
+    - user-list: Allow hidden user visibility to be toggled
+    - Enable touchpad tap-to-click
+  * Packaging changes
+    - d/control add libxapp-dev to Build-Depends
+    - d/control add libxapp1 as a dependency
+    - d/copyright update copyright years
+
+ -- Samuel Lane <samlane00@gmail.com>  Mon, 03 Jul 2023 09:41:02 -0400
+
 slick-greeter (1.6.1-1) unstable; urgency=medium
 
   * New upstream release
