@@ -1,7 +1,7 @@
 slick-greeter (1.8.1-0.1) unstable; urgency=medium
 
   * NMU (non-maintainer upload)
-
+    - checked and authorised by the maintainer David Mohammed
   * New upstream release
     - power: Round battery power percentage
     - keyboard: Add support for layout switching
@@ -22,8 +22,8 @@ slick-greeter (1.8.1-0.1) unstable; urgency=medium
     - Enable touchpad tap-to-click
   * Packaging changes
     - d/control add libxapp-dev to Build-Depends
-    - d/control add libxapp1 as a dependency
-    - d/copyright update copyright years
+    - d/control add suggests on onboard
+    - d/copyright bump copyright years
 
  -- Samuel Lane <samlane00@gmail.com>  Mon, 03 Jul 2023 09:41:02 -0400
 

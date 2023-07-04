@@ -23,8 +23,9 @@ Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter.git -b debian
 
 Package: slick-greeter
 Architecture: any
-Depends: lightdm, libxapp1, python3, python3-gi, ${misc:Depends}, ${shlibs:Depends}
+Depends: lightdm, python3, python3-gi, ${misc:Depends}, ${shlibs:Depends}
 Recommends: desktop-base, lightdm-settings
+Suggests: onboard
 Provides: lightdm-greeter
 Description: Slick-looking LightDM greeter
  Slick-Greeter is cross-distribution and should work pretty much
