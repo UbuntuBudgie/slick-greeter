@@ -1,3 +1,19 @@
+slick-greeter (2.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - Updated translations
+    - Add cinnamon-wayland logo
+    - Add a setting configure the user list alignment
+    - Add man page to enable-tap-to-click
+  * Packaging changes
+    - d/control & d/rules add rules to install Debian specific package
+      recommendations and schema override; these should not be installed
+      on Debian derivatives and thus allows one package to be maintained
+    - d/control bump StandardsVersion; no additional changes required
+    - d/control add Rules-Requires-Root: no
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Wed, 06 Dec 2023 21:17:08 +0000
+
 slick-greeter (1.8.1-0.1) unstable; urgency=medium
 
   * NMU (non-maintainer upload)

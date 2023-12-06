@@ -4,6 +4,13 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 export DH_VERBOSE = 1
 
+ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
+	SUBSTVARSREC = -Vdist:Recommends="desktop-base"
+else
+	SUBSTVARSREC = -Vdist:Recommends="lightdm-settings"
+endif
+
+
 %:
 	dh $@
 
@@ -12,3 +19,12 @@ override_dh_autoreconf:
 
 override_dh_missing:
 	dh_missing --fail-missing
+
+override_dh_gencontrol:
+	dh_gencontrol -- $(SUBSTVARSREC)
+
+override_dh_auto_install:
+	dh_auto_install
+ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
+	dh_install debian/15_slick-greeter.gschema.override /usr/share/glib-2.0/schemas/
+endif

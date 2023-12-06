@@ -2,7 +2,7 @@ Source: slick-greeter
 Section: x11
 Priority: optional
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Homepage: https://github.com/linuxmint/slick-greeter
 Build-Depends:
  at-spi2-core,
@@ -20,11 +20,12 @@ Build-Depends:
  xvfb,
 Vcs-Browser: https://github.com/UbuntuBudgie/slick-greeter/tree/debian
 Vcs-Git: https://github.com/UbuntuBudgie/slick-greeter.git -b debian
+Rules-Requires-Root: no
 
 Package: slick-greeter
 Architecture: any
 Depends: lightdm, python3, python3-gi, ${misc:Depends}, ${shlibs:Depends}
-Recommends: desktop-base, lightdm-settings
+Recommends: lightdm-settings, ${dist:Recommends}
 Suggests: onboard
 Provides: lightdm-greeter
 Description: Slick-looking LightDM greeter
