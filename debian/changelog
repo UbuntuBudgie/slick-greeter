@@ -1,3 +1,19 @@
+slick-greeter (2.0.5-1) unstable; urgency=medium
+
+  * New upstream release
+    - add meson build support
+    - translation updates
+    - add cursor scaling for HiDPI displays
+    - Fix HiDPI rendering of session badges and message indicator
+    - Make the user and session box wider
+  * Packaing Changes
+    - d/control remove unnecessary B/D gnome-common, debhelper,
+      intltool and xvfb; add meson
+    - d/copyright bump copyright year to 2024
+    - d/rules remove autoreconf build override and add meson rule
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 18 Jun 2024 21:30:40 +0100
+
 slick-greeter (2.0.1-1) unstable; urgency=medium
 
   * New upstream release

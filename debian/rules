@@ -12,10 +12,7 @@ endif
 
 
 %:
-	dh $@
-
-override_dh_autoreconf:
-	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
+	dh $@ --without=autoreconf --buildsystem=meson
 
 override_dh_missing:
 	dh_missing --fail-missing

@@ -5,11 +5,11 @@ Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
 
 Files: *
 Copyright: 2011-2013 Canonical Ltd
- 2017-2023 Clement Lefebvre <root@linuxmint.com>
+ 2017-2024 Clement Lefebvre <root@linuxmint.com>
 License: GPL-3
 
 Files: debian/*
-Copyright: 2017-2023 David Mohammed <fossfreedom@ubuntu.com>
+Copyright: 2017-2024 David Mohammed <fossfreedom@ubuntu.com>
 License: GPL-2+
 
 Files: po/*.po
