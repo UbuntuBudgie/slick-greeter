@@ -1,3 +1,16 @@
+slick-greeter (2.2.5-1) unstable; urgency=medium
+
+  * New upstream release
+    - translation updates
+    - switch to using xapp symbolic icons
+    - Add blur effect
+    - Add user's avatar
+    - Add support for sway
+  * d/copyright Bump years
+    d/control Bump StandardsVersion - no changes required
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 22 Dec 2025 00:01:28 +0000
+
 slick-greeter (2.0.9-1) unstable; urgency=medium
 
   * New upstream release
