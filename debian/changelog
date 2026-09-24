@@ -1,3 +1,16 @@
+slick-greeter (2.2.7-1) unstable; urgency=medium
+
+  * New upstream release
+    - Don't force authenticated user to press the login button
+    - Updated translations
+  * Packaging Changes
+    - d/control add dependency gir1.2-gtk-3.0
+      add recommendations on x11-xkb-utils and xinput (Closes: #1063231)
+    - d/control remove unneeded B/D on dbus-x11 (Closes: #1117107)
+    - wrap-and-sort -bst
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 24 Sep 2026 18:42:20 +0100
+
 slick-greeter (2.2.5-1) unstable; urgency=medium
 
   * New upstream release
